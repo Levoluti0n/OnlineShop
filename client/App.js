@@ -1,12 +1,12 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import TabNavigator from './navigation/TabNavigator';
-import IonIcon from 'react-native-vector-icons/Ionicons';
+import TabNavigator from './src/navigation/TabNavigator';
+import UserNavigation from './src/navigation/UserNavigation';
 
 export default function App() {
   return (
     <NavigationContainer>
-      <TabNavigator />
+      <UserNavigation />
     </NavigationContainer>
   );
 }

@@ -26,7 +26,6 @@ export default function HomeScreen() {
             <Entypo color={colors.white} size={30 / scale} name="menu" />
           </TouchableOpacity>
           <TouchableOpacity>
-            {/* <Text style={style.title}>luxShop</Text> */}
             <Image
               style={{
                 width: 200 / scale,
