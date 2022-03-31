@@ -1,5 +1,11 @@
 import React from 'react';
-import {View, Text, SafeAreaView, TouchableOpacity} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  TouchableOpacity,
+  StatusBar,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import IonIcon from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/native';
@@ -39,6 +45,7 @@ export default function ProfileScreen() {
   };
   return (
     <SafeAreaView style={style.container}>
+      <StatusBar backgroundColor={colors.green} />
       <View style={style.header}>
         <Text style={style.title}>Settings</Text>
         <View style={style.avatarBox}>
