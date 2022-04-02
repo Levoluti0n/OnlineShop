@@ -11,6 +11,7 @@ MaterialCommunityIcons.loadFont();
 import ProfileScreen from '../screens/Profile/ProfileScreen';
 import AddressScreen from '../screens/Address/AddressScreen';
 import WalletScreen from '../screens/Wallet/WalletScreen';
+import ChatScreen from '../screens/Chat/ChatScreen';
 import HomeScreen from '../screens/Home/HomeScreen';
 import scale from '../helpers/scale.js';
 import colors from '../helpers/colors';
@@ -28,11 +29,11 @@ const tabOptions = {
     active: 'ios-heart',
     inActive: 'ios-heart-outline',
   },
-  Bag: {
+  Chat: {
     icon: Ionicons,
     center: 'center',
-    active: 'ios-cart',
-    inActive: 'ios-cart-outline',
+    active: 'ios-chatbubble',
+    inActive: 'ios-chatbubble-outline',
   },
   Orders: {
     name: 'Orders',
@@ -109,11 +110,11 @@ export default function TabNavigator() {
         }}
       />
       <Tab.Screen
-        name="Bag"
-        component={HomeScreen}
+        name="Chat"
+        component={ChatScreen}
         options={{
           header: () => null,
-          tabBarIcon: ({focused}) => tabBar(focused, tabOptions.Bag),
+          tabBarIcon: ({focused}) => tabBar(focused, tabOptions.Chat),
         }}
       />
       <Tab.Screen

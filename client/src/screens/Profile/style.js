@@ -22,8 +22,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   avatarBoxRight: {
-    // borderColor: colors.white,
-    // borderWidth: 1 / scale,
     borderRadius: 35 / scale,
     backgroundColor: colors.white,
     padding: 5 / scale,
@@ -59,6 +57,7 @@ export default StyleSheet.create({
     backgroundColor: colors.white,
     borderTopLeftRadius: 40 / scale,
     borderTopRightRadius: 40 / scale,
+    backgroundColor: colors.softGray,
   },
   optionsBox: {
     flexDirection: 'row',
@@ -73,6 +72,7 @@ export default StyleSheet.create({
     borderRadius: 25 / scale,
     justifyContent: 'center',
     borderColor: colors.green,
+    backgroundColor: colors.white,
   },
   touchBack: {
     borderRadius: 20 / scale,
@@ -84,5 +84,9 @@ export default StyleSheet.create({
   },
   optionsFormText: {
     color: colors.green,
+  },
+  settingsBox: {
+    marginTop: 35 / scale,
+    paddingHorizontal: 20 / scale,
   },
 });

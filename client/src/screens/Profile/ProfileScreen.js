@@ -14,8 +14,9 @@ IonIcon.loadFont();
 Entypo.loadFont();
 Icon.loadFont();
 
+import SettingsForm from '../../component/profile/SettingsForm';
 import Button from '../../component/buttons/Button';
-import Avatar from '../../component/Avatar/Avatar';
+import Avatar from '../../component/avatar/Avatar';
 import colors from '../../helpers/colors';
 import scale from '../../helpers/scale';
 import style from './style';
@@ -24,7 +25,7 @@ const Options = {
   Wallet: {
     name: 'Wallet',
     Type: IonIcon,
-    icon: 'ios-wallet-outline',
+    icon: 'ios-wallet',
   },
   Address: {
     Type: Entypo,
@@ -32,6 +33,33 @@ const Options = {
     icon: 'location-pin',
   },
 };
+const settingOptions = [
+  {
+    title: 'Servises',
+    options: [
+      {
+        name: 'Home',
+        Icon: IonIcon,
+        iconName: 'ios-home',
+      },
+      {
+        name: 'Call Back',
+        iconName: 'ios-headset',
+        Icon: IonIcon,
+      },
+      {
+        name: 'Wallet',
+        Icon: IonIcon,
+        iconName: 'ios-wallet',
+      },
+      {
+        Icon: Entypo,
+        name: 'Address',
+        iconName: 'location',
+      },
+    ],
+  },
+];
 
 export default function ProfileScreen() {
   const navigation = useNavigation();
@@ -77,6 +105,9 @@ export default function ProfileScreen() {
             inner={OptionsForm(Options.Address)}
             onPress={() => navigation.push('Address')}
           />
+        </View>
+        <View style={style.settingsBox}>
+          <SettingsForm options={settingOptions} />
         </View>
       </View>
     </SafeAreaView>

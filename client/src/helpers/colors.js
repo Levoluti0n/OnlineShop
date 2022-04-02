@@ -5,7 +5,7 @@ const colors = {
   green: '#54AF4B', //#0CBD2A
   black: '#000000',
   inActive: '#98CBA2',
-  softGray: '#E8E8E8',
+  softGray: '#F2F2F2',
 };
 
 export default colors;
